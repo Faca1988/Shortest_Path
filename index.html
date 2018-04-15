@@ -15,7 +15,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-    <script src="app.js" async></script>
+    <script src="sources/Javascript/app.js" async></script>
   </head>
   <body>
     <section id="general_frame">
@@ -33,7 +33,7 @@
             <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
               Menú
             </button>
-            <ul class="dropdown-menu  dropdown-menu-left" aria-labelledby="dropdownMenu1">
+            <ul class="dropdown-menu dangers dropdown-menu-left" aria-labelledby="dropdownMenu1">
               <li><a href="#" onclick="getElementById( \" lienzo \" ).innerHTML=charge()" >Action</a></li>
               <li><a href="#">Another action</a></li>
               <li><a href="#">Something else here</a></li>
@@ -49,6 +49,50 @@
             <button class="btn btn-primary" type="button" name="button">BOTON</button>
         </div>
 
+        <div class="group-menu">
+          <div class="dropdown"><!--Comienzo del dropdown-->
+            <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              Carga de datos
+            </button>
+            <ul class="dropdown-menu infos dropdown-menu-left" aria-labelledby="dropdownMenu1">
+              <li>
+
+                  <div class="panel panel-default">
+                    <div class="panel-heading "> Mapa de Nodos </div>
+
+
+                      <table class="table">
+                            <tr><!-- Fila Unica de Titulos-->
+                              <th>NodoA</th><!--columna Nro 1-->
+                              <th>NodoB</th><!--columna Nro 2-->
+                              <th>Valor</th>
+                            </tr>
+
+                            <a href="#">
+                              <tr><!--Primer fila-->
+                                <td><input type="text" name="nodeA" class="form-control" id="nodeA"></td>
+                                <td><input type="text" name="nodeB" class="form-control" id="nodeB"></td>
+                                <td><input type="text" name="value" class="form-control" id="value"></td>
+                                <td><button class="glyphicon glyphicon-plus btn-form" aria-hidden="true" type="submit"></button></td>
+                                <td><button class="glyphicon glyphicon-minus btn-form" type="reset" aria-hidden="true"></button></td>
+                              </tr>
+                            </a>
+                            <!--<tr>Segunda fila
+                              <td><input type="text" name="node" class="form-control"></td>
+                              <td><input type="text" name="node" class="form-control"></td>
+                              <td><input type="text" name="value" class="form-control"></td>
+                              <td><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></td>-->
+
+                      </table>
+
+                  </div>
+
+                <button class="btn btn-primary" type="button" name="buttonAdd" onclick="">add</button>
+                <button class="btn btn-primary" type="button" name="buttonClean" onclick="">clean</button>
+              </li>
+            </ul>
+          </div><!--Final del dropdown-->
+        </div>
 
       </nav><!-- FINAL DEL NAVBAR -->
 
