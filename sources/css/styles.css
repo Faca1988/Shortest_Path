@@ -33,8 +33,12 @@ hr{
       justify-content: normal !important;
       border: none !important;
 }
-.dropdown-menu{
+.dangers{
   background-color: #bd2130 !important;
+  border: 1px solid #333 !important;
+}
+.infos{
+  background-color: #117a8b !important;
   border: 1px solid #333 !important;
 }
 .group-menu{
@@ -49,7 +53,6 @@ hr{
   background-color: grey !important;
   display: inline;
 }
-
 .lienzo{
   width: 80%;
   height: 100%;
@@ -61,17 +64,30 @@ hr{
   min-width: 300px;
   color: white;
 }
-
 .foot{
   text-align: center;
   font-weight: bolder;
   background-color: blue !important;
   color: white;
 }
-
-.dropdown-menu a:hover{
+.dangers a:hover{
   background-color: red !important;
   text-shadow: white;
   font-size: 15px;
   color: white !important;
+}
+.infos a:hover{
+  background-color: #17a2b8 !important;
+  text-shadow: white;
+  font-size: 15px;
+  color: white !important;
+}
+.infos tbody a:hover{
+  background-color: #17a2b8 !important;
+  text-shadow: white;
+  font-size: 15px;
+  color: white !important;
+}
+.btn-form{
+  color:red !important;
 }
